@@ -6,17 +6,15 @@
         <title>Document</title>
     </head>
     <body>
+        
+    <?php
+
+    $name="Joel";
+    echo "Hello $name". '<br>';
 
 
-    <h1>Exempel - 01</h1>
-    <?php 
-    
-    //här skrivs php-koden
-    echo "Hello World!";
-
-
+    echo "Hej " . $name . "!" ;
     ?>
+
     </body>
     </html>
-    
-    
