@@ -10,7 +10,7 @@
 
     <h1>Exempel - 01</h1>
     <?php 
-    
+    //blabla
     //här skrivs php-koden
     echo "Hello World!";
 
