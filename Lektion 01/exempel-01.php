@@ -11,10 +11,10 @@
     <h1>Exempel - 01</h1>
     <?php 
     //blablablabla
-    
-    //här skrivs php-koden
-    echo "Hello World!";
 
+    //här skrivs php-koden
+    echo "Hello World!<br>";
+    echo "test ", "av ", "strängar"; 
 
     ?>
     </body>
