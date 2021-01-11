@@ -23,27 +23,27 @@ echo date("a <br>");
 echo " <br><br>";
 
 
-/*
+
 //För att få rätt tidszon
-date_default_timezone_set("Sweden"); //Funkar inte!
+date_default_timezone_set("Europe/Stockholm"); //Funkar nu!
 echo date("h:i:sa <br><br>")
-*/
+
 
 /*
 $timestamp = mktime (10,14,54,9,10,1981);
 echo $timestamp; // ger bara siffror, antalet sekunder som gått sedan datumet ovan
 
 echo "<br>";
-
-echo date("m/d/Y h:i:sa", $timestamp);
 */
+//echo date("m/d/Y h:i:sa");
 
+/*
 $timestamp2 = strtotime("7:00pm March 22 2016");
 $timestamp3 = strtotime("tomorrow");
 $timestamp4 = strtotime("next sunday");
 $timestamp5 = strtotime("+2 Days");
-echo $timestamp2;
-echo date("m/d/y h:i:sa", $timestamp3);
-
+//echo $timestamp2;
+echo date("<br>m/d/y h:i:sa", $timestamp3);
+*/
 
 ?>
