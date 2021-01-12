@@ -26,7 +26,7 @@ echo " <br><br>";
 
 //För att få rätt tidszon
 date_default_timezone_set("Europe/Stockholm"); //Funkar nu!
-echo date("h:i:sa <br><br>")
+echo date("h:i:sa <br><br>");
 
 
 /*
@@ -37,13 +37,14 @@ echo "<br>";
 */
 //echo date("m/d/Y h:i:sa");
 
-/*
+
 $timestamp2 = strtotime("7:00pm March 22 2016");
 $timestamp3 = strtotime("tomorrow");
 $timestamp4 = strtotime("next sunday");
 $timestamp5 = strtotime("+2 Days");
-//echo $timestamp2;
-echo date("<br>m/d/y h:i:sa", $timestamp3);
-*/
+echo $timestamp2;
+echo date("<br>m/d/y h:i:sa", $timestamp2);
+
+
 
 ?>
