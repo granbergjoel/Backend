@@ -10,7 +10,7 @@ echo "<pre>";
 
 ?>
 
-<form action="#" method="post">
+<form action="exempel-08.php" method="post">
 <input type="text" name="fname">
 <input type="submit" value="Send"></form>
 
@@ -18,6 +18,6 @@ echo "<pre>";
 
 if(strtoupper($_SERVER["REQUEST_METHOD"]== "POST")){
     echo "Hello ". $_POST["fname"];
-}
+} 
 
 ?>
