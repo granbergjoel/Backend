@@ -2,6 +2,7 @@
 
     include ("App.php"); 
 
+    $count =$_GET["antal"]??"";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -15,7 +16,7 @@
 
 <?php
 
-    App::main();
+    App::main($count);
 
 ?>
 

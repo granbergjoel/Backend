@@ -2,10 +2,13 @@
 
 
 class App{
-    public static $endpoint ="https://api.namnapi.se/v2/names.json";
-//2/names.json
-    public static function main(){
+    public static $endpoint = "https://api.namnapi.se/v2/names.json";
+
+    public static function main($count){
 try{
+    if ($count){
+        self::$endpoint= self::$endpoint."?limit=$count";
+    }
        $array = self::getData();
         self::viewdata($array);
        /*
