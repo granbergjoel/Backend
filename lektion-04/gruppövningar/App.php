@@ -10,8 +10,6 @@
 <body>
 
 
-
-
 <?php
 
 $endpoint = "https://dog.ceo/api/breeds/list/all";
