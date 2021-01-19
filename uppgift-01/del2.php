@@ -15,6 +15,7 @@ Efternamn: <input type="text" name="lname"><br>
 </form>
 
 <?php
+
 echo "<pre>";
 print_r ($_GET);
 echo "</pre>";
