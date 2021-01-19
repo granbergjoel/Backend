@@ -1,8 +1,6 @@
 <?php
 Class App{
 
-
-
 public static function main(){
     $endpoint = "https://fakestoreapi.com/products";
     try {
@@ -13,7 +11,7 @@ public static function main(){
     }
     }
 
-    
+  
 public static function getData($endpoint){
     $json = @file_get_contents($endpoint);
     if (!$json)
@@ -22,25 +20,33 @@ public static function getData($endpoint){
     }
     
 
-
-
 public static function viewData($array){
+   if (empty($_GET['category']) ||$_GET['category'] == 'index'){
+       echo '<br><br>Välj kategori ovan';
+   }
+   else if ($_GET['category'] == 'electronics'){
+    echo '<br><br>Vi har ingen elektronik tyvärr';
+   }
+
+   else{
     foreach ($array as $key => $value) {
-        if($value['category'] == $_GET['category']){
-        echo "<br>";
-        echo "<br>";
-        echo $value['title']. '<br>';
-        echo $value['price']. '<br>';
-        echo $value['description']. '<br>';
-        echo $value['category']. '<br>';
-        echo "<img src='$value[image]'>";
-        echo "<br>";
-        echo "<br>";
+        if ($value['category'] == $_GET['category']){
+            echo "<br>";
+            echo "<br>";
+            echo $value['title']. '<br>';
+            echo $value['price']. '<br>';
+            echo $value['description']. '<br>';
+            echo $value['category']. '<br>';
+            echo "<img src='$value[image]'>";
+            echo "<br>";
+            echo "<br>";
+                }
             }
-        }
+      }
+
+   
+    }  
     }
     
-
-}     
 ?>
 

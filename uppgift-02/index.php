@@ -8,7 +8,7 @@
     <title>Index</title>
 </head>
 <body>
-<a href="index.php">Index</a>
+<a href="?category=index">Index</a>
 <a href="?category=men%20clothing">Men's clothing</a>
 <a href="?category=women clothing">Women's clothing</a>
 <a href="?category=jewelery">Jewelery</a>
