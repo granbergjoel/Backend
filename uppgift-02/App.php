@@ -13,11 +13,10 @@ public static function main(){
     }
 
     public static function postData(){
-        $postValue = $_POST['name'];
+        $postValue = $_GET['name'];
         echo $postValue;
     }
-  
-    
+     
 public static function getData($endpoint){
     $json = @file_get_contents($endpoint);
     if (!$json)
@@ -25,36 +24,32 @@ public static function getData($endpoint){
     return json_decode($json, true);
     }
     
-
-    
-
 public static function viewData($array){
-   if (empty($_POST['category']) ||$_POST['category'] == 'index'){
-       echo '<br><br>Välj kategori ovan';
-   }
-   else if ($_POST['category'] == 'electronics'){
-    echo '<br><br>Vi har ingen elektronik tyvärr';
-   }
 
-   else{
+if (isset($_GET['category'])){
+    $category = strtolower($_GET['category']);
     foreach ($array as $key => $value) {
-        if ($value['category'] == $_POST['category']){
-            echo "<br>";
-            echo "<br>";
-            echo $value['title']. '<br>';
-            echo $value['price']. '<br>';
-            echo $value['description']. '<br>';
-            echo $value['category']. '<br>';
-            echo "<img src='$value[image]'>";
-            echo "<br>";
-            echo "<br>";
+
+        if($category == 'electronics'){
+            break;
+        }else if($value['category'] == $category){
+            $items="<div class='col-lg-4 col-md-6 mb-4'>
+            <div class='card mt-4'>
+            <img class='card-img-top img-fluid' src='$value[image]' alt=''>
+             <div class='card-body'>
+            <h3 class='card-title'>$value[title]</h3>
+            <h4>$value[price]</h4>
+            <p class='card-text'>$value[description]
+            </p>
+            </div>
+            </div>   
+            </div>";
+
+            
+            echo $items;    
                 }
-            }
-      }
-
-   
+            }           
+        }      
     }  
-    }
-    
+}
 ?>
-
