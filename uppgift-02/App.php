@@ -1,4 +1,5 @@
 <?php
+ 
 Class App{
 
 public static function main(){
@@ -11,7 +12,12 @@ public static function main(){
     }
     }
 
+    public static function postData(){
+        $postValue = $_POST['name'];
+        echo $postValue;
+    }
   
+    
 public static function getData($endpoint){
     $json = @file_get_contents($endpoint);
     if (!$json)
@@ -20,17 +26,19 @@ public static function getData($endpoint){
     }
     
 
+    
+
 public static function viewData($array){
-   if (empty($_GET['category']) ||$_GET['category'] == 'index'){
+   if (empty($_POST['category']) ||$_POST['category'] == 'index'){
        echo '<br><br>Välj kategori ovan';
    }
-   else if ($_GET['category'] == 'electronics'){
+   else if ($_POST['category'] == 'electronics'){
     echo '<br><br>Vi har ingen elektronik tyvärr';
    }
 
    else{
     foreach ($array as $key => $value) {
-        if ($value['category'] == $_GET['category']){
+        if ($value['category'] == $_POST['category']){
             echo "<br>";
             echo "<br>";
             echo $value['title']. '<br>';

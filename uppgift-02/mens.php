@@ -8,19 +8,17 @@
     <title>Mens Clothing</title>
 </head>
 <body>
-<a href="index.php">Index</a>
-<a href="?category=men%20clothing">Men's clothing</a>
-<a href="?category=women%20clothing">Women's clothing</a>
-<a href="?category=jewelery">Jewelery</a>
-
-
-
+<a href="index.php" method="POST">Index</a>
+<a href="?category=men%20clothing" method="POST">Men's clothing</a>
+<a href="?category=women%20clothing" method="POST">Women's clothing</a>
+<a href="?category=jewelery" method="POST">Jewelery</a>
 
 
 
 
     <?php      
-   App::main();
+
+  App::main();
     ?>
 
     

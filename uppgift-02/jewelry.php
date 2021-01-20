@@ -13,7 +13,6 @@
 <a href="?category=women%20clothing">Women's clothing</a>
 <a href="?category=jewelery">Jewelery</a>
 
-
     <?php      
    App::main();
     ?>
