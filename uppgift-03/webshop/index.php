@@ -23,13 +23,13 @@
 
 
         <!-- Bild ovanför header -->
-     <div class="header">
+    <div class="header">
   <h1>Header</h1>
   <p>My supercool header</p>
-  <a href="?category=index"  class="list-group-item">Home</a>
-          <a href="?category=about"  class="list-group-item">About</a>
-          <a href="?category=contact"  class="list-group-item">Contact</a>
-</div>
+    <a href="?category=index"  class="list-group-item">Home</a>
+    <a href="?category=about"  class="list-group-item">About</a>
+    <a href="?category=contact"  class="list-group-item">Contact</a>
+    </div>
 
 
 
