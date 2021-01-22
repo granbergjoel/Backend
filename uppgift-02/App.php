@@ -45,7 +45,6 @@ if (isset($_GET['category'])){
             </div>   
             </div>";
 
-            
             echo $items;    
                 }
             }           
