@@ -3,7 +3,7 @@
 
     class App
     {  
-        private static  $endpoint = 'http://localhost/VS%20code/uppgift-03/webshop/Api.php';
+        private static  $endpoint = 'http://localhost/VS%20code/Backend/uppgift-03/webshop/Api.php';
         public static function Main()
         {
             echo $_GET['direction'];
