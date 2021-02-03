@@ -24,6 +24,7 @@
       <div class="col-lg-3">
         <h1 class="my-4">Joels Butik</h1>
         <div class="list-group">
+        
           <a href="#" class="list-group-item active">Välj Kategori</a>
           <a href="?category=women%20clothing"  class="list-group-item">Women's clothing</a>
           <a href="?category=men clothing"  class="list-group-item">Men's clothing</a>
@@ -32,8 +33,9 @@
         </div>
       </div>
 
+      <div class="row">
     <?php App::main();?>
-
+      </div>
     </div>
 
   </div>
