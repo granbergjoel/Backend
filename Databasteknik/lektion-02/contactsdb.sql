@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Värd: localhost:3306
--- Tid vid skapande: 03 feb 2021 kl 08:29
+-- Tid vid skapande: 04 feb 2021 kl 09:14
 -- Serverversion: 5.7.24
 -- PHP-version: 7.4.1
 
@@ -30,9 +30,9 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `contacts` (
   `id` int(11) NOT NULL,
-  `name` varchar(50) COLLATE utf8_swedish_ci NOT NULL,
-  `tel` varchar(50) COLLATE utf8_swedish_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_swedish_ci;
+  `name` varchar(50) NOT NULL,
+  `tel` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Index för dumpade tabeller
