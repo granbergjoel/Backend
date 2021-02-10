@@ -38,6 +38,7 @@ $imageArray = array(
     8 => 'Grön kardemumma från södra Indien, denna krydda används framför allt till desserter och risrätter men gör sig även utmärkt i desserter och bakverk.',
     9 => 'Mycket kraftig anissmak, utmärkt till både mat och dessert'
     );
+    
     $priceArray = array(
     0 => 160,//kg
     1 => 260 ,//260/kg
