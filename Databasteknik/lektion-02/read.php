@@ -28,6 +28,10 @@ $table= "<table class='table table-hover'>
 
 
 foreach($result as $key =>$value){
+    echo "<pre>";
+    print_r($result);
+    echo "</pre>";
+
 $table.="
     <tr>
         <td>$value[name]</td>
