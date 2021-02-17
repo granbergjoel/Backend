@@ -1,0 +1,30 @@
+blueberry_bomb 9$
+'A delicious blueberry pastry drizzling with vanilla cremé'
+
+choco_cupcakes 11$
+'A classic snack. Rich chocolate melted on a moist cupcake'
+
+cinnamon_rolls 12$
+'Sugar, cinnamon and flour. Can it be better?'
+
+color_macrons 6$
+'French macrons in all colors of the rainbow'
+
+cream_puffs 13$
+'Thick vanilla cream in an crusty puff pastry'
+
+eastern_pastry 9$
+'Exotic pastry from the middle east topped with pistagio nuts'
+
+jelly_donuts 8$
+'A staple in the baking community, rolled in sweet,sweet sugar'
+
+mini_dessert 7$
+'When you just want a nibble, toppes with fresh strawberrys'
+
+raspberry_cookie 3$
+'Crunchy cookie with raspberry jam'
+
+sweet_croissant 7$
+'A crispy, puffy croissant filled with vanilla cream'
+
